@@ -1,4 +1,4 @@
-package com.zing.netty;
+package com.zing.netty.ssy.week01;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

@@ -12,6 +12,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 public class ClientBoot {
     public static void main(String[] args) throws Exception {
         EventLoopGroup clientGroup = new NioEventLoopGroup();
+
         try {
             Bootstrap clientBootstrap = new Bootstrap();
             clientBootstrap.group(clientGroup).channel(NioSocketChannel.class)

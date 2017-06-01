@@ -1,4 +1,4 @@
-package com.zing.netty.ssy.week02.chatroom.chatserver;
+package com.zing.netty.ssy.week02.chatroom.chatclient;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
@@ -10,9 +10,10 @@ import io.netty.handler.codec.string.StringEncoder;
 import io.netty.util.CharsetUtil;
 
 /**
- * Created by zing on 2017/5/31.
+ * Created by zing on 2017/6/1.
  */
-public class ChatServerInitializer extends ChannelInitializer<SocketChannel> {
+public class ChatClientInitializer extends ChannelInitializer<SocketChannel>{
+
 
     @Override
     protected void initChannel(SocketChannel ch) throws Exception {
@@ -32,6 +33,6 @@ public class ChatServerInitializer extends ChannelInitializer<SocketChannel> {
         pipeline.addLast(new StringDecoder(CharsetUtil.UTF_8));
         pipeline.addLast(new StringEncoder(CharsetUtil.UTF_8));
 
-        pipeline.addLast(new ChatServerHandler());
+        pipeline.addLast(new ChatClientHandler());
     }
 }

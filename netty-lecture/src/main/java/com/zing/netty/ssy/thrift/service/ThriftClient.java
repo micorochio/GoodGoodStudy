@@ -1,13 +1,13 @@
 package com.zing.netty.ssy.thrift.service;
 
 import com.alibaba.fastjson.JSONObject;
-import com.zing.netty.ssy.thrift.entity.DataException;
 import com.zing.netty.ssy.thrift.entity.Person;
 import com.zing.netty.ssy.thrift.entity.PersonService;
-import org.apache.thrift.TException;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.protocol.TProtocol;
-import org.apache.thrift.transport.*;
+import org.apache.thrift.transport.TFramedTransport;
+import org.apache.thrift.transport.TSocket;
+import org.apache.thrift.transport.TTransport;
 
 public class ThriftClient {
     public static void main(String[] args) {

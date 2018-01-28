@@ -1,6 +1,6 @@
 package com.zing.nio_study;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

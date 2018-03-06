@@ -22,10 +22,11 @@ public class BookShelf implements Aggregate {
     }
 
     public int getLength() {
-        return books.length;
+        return last;
     }
 
     public void setBooks(Book[] books) {
         this.books = books;
+        this.last = books.length;
     }
 }

@@ -1,14 +1,11 @@
-package com.zing.java;
+package com.java.lambda;
 
-
-import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class StreamTest1 {
-    @Test
-    public void sourceNotChange() {
+    public static void main(String[] args) {
         List<String> names = Arrays.asList("zing", "wang", "zhen", "max");
         System.out.println("\nthe source data-------------------");
         System.out.println(names);

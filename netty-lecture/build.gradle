@@ -1,4 +1,4 @@
- group 'com.zing.netty'
+group 'com.zing'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'

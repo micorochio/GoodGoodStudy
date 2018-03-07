@@ -11,8 +11,8 @@ public class Tester {
         Book b3 = new Book("Cinderella", "C");
         Book b4 = new Book("Daddy Long Legs", "D");
 
-        BookShelf shelf = new BookShelf(4);
-        shelf.setBooks(new Book[]{b1, b2, b3, b4});
+        BookShelf shelf = new BookShelf();
+        shelf.addBooks(new Book[]{b1, b2, b3, b4});
 
         Iterator<Book> iterator = shelf.iterator();
         while (iterator.hasNext()) {

@@ -21,7 +21,7 @@ public class StringDisplay extends AbstractDisplay {
 
     @Override
     public void print() {
-        System.out.println(padding(strings, 18, ' ').substring(0, 18));
+        System.out.println(padding(strings, 18, ' '));
     }
 
     private String padding(String strings, int length, char c) {
@@ -32,7 +32,7 @@ public class StringDisplay extends AbstractDisplay {
                 a[i] = c;
             }
 
-            return new String(a);
+            return "|" + strings + new String(a) + "|";
         }
         return strings.substring(0, 18);
     }

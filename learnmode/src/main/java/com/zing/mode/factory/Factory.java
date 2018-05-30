@@ -6,11 +6,11 @@ package com.zing.mode.factory;
  */
 public abstract class Factory {
     public final Student create(String name) {
-        Student collegeStudent = graduated(name);
+        Student product = graduated(name);
 
-        registerDiploma(collegeStudent);
+        registerDiploma(product);
 
-        return collegeStudent;
+        return product;
     }
 
     /**

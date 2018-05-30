@@ -131,7 +131,7 @@ class SingletonWithStaticHolder {
 }
 
 /**
- * 枚举单利
+ * 枚举单例
  */
 enum SingletonEnum {
     SINGLETON_Instance;

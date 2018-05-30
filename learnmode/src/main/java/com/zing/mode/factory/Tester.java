@@ -1,6 +1,11 @@
 package com.zing.mode.factory;
 
 /**
+ * Student 可以向上抽象一层，
+ * 但是这个Demo实现是不是很好
+ * <p>
+ * 向上抽象一层的目的是更好的解耦
+ *
  * @author zing
  * @date 2018/3/9 10:23
  */

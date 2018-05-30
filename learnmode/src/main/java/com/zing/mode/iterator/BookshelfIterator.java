@@ -15,10 +15,12 @@ public class BookshelfIterator implements Iterator<Book> {
         this.bookShelf = bookShelf;
     }
 
+    @Override
     public boolean hasNext() {
         return index < bookShelf.getLength();
     }
 
+    @Override
     public Book next() {
         Book book = bookShelf.getBookAt(index);
         index++;
